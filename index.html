@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>HW1 - Web Stack</h1>
+    <h3>CS 7450 - Information Visualization Course Information</h3>
+
+    <div class="menu">
+        <a href="#section1">Instructor and TAs</a>
+        <a href="#section2">Syllabus</a>
+        <a href="#section3">Schedule Table</a>
+        <a href="#section4">Readings</a>
+        <a href="#section5">Assignments</a>
+    </div>
+
+    <section id="section1">
+        <h2>Instructor and TAs</h2>
+        <div class="image-container">
+            <figure class="image-item">
+                <img src="YY.jpg" alt="Prof" />
+                <figcaption>Professor: Yalong Yang</figcaption>
+            </figure>
+    
+            <figure class="image-item">
+                <img src="YF.jpg" alt="TA1" />
+                <figcaption>TA: Yu Fu</figcaption>
+            </figure>
+    
+            <figure class="image-item">
+                <img src="TL.jpg" alt="TA2" />
+                <figcaption>TA: Tao Lu</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="section2">
+        <h2>Syllabus</h2>
+        <h4>Overview and Learning Objectives</h4>
+        <p>
+            For one day per week (Tuesdays), we will focus on visualization research. We will read research papers on some topic/theme, students will make presentations about the papers, and we will discuss. One goal is to try to develop ideas for new research projects. On the other day per week (Thursdays), we will focus on visualization system/application development. Students will learn how to develop interactive visualization tools using languages and libraries like Vega-Lite, D3, and JavaScript.
+        </p>
+        <p>
+            This course is an advanced information visualization course focusing on research within this domain. Students should already have a good working knowledge of data visualization along the lines of what one would get from taking CS 4460 or CS 6730 at Georgia Tech or equivalent courses. This course (CS 7450) is NOT intended to be a student's first exposure to the data visualization area.
+        </p>
+        <h4>Textbooks</h4>
+        <p>There are no required textbooks for this course. However, there is a collection of resources that you should find helpful for assignments throughout the course. There are also <a href="#section4">readings</a> that we will cover throughout the course, which are all available while on the GT VPN (or on campus).</p>
+        <h4>Course Format</h4>
+        <p>The course will consist mainly of two parts: reading and discussing research papers about information visualization and learning how to program web-based visualizations (predominantly using d3.js).</p>
+        <h4>Timeliness</h4>
+        <p>All assignments are due at 11:59 pm on Friday. Late work will receive a 10% per day penalty. 
+            After 5 days, a 0% will be given, and no submission will be accepted. 
+            Too much other work, being gone for the weekend, running out of paper, etc., 
+            are not emergencies. It is required to submit a "Class Absence Verification" 
+            using the following link AND send advance notification to <b>Tao Lu</b> with the instructor cc'ed. Severe emergency situations can be accommodated with flexibility. 
+        </p>
+        <p>Reference: <a href="https://studentlife.gatech.edu/request-assistance">https://studentlife.gatech.edu/request-assistance</a>
+        </p>
+        <p>However, it is understandable that life events and other reasons come up that may require you to miss a deadline. As such, each student is given 2 “late days” that you can use throughout the semester. If you want to use any of your late days, add a note (or comment) to the Canvas submission at the time you submit. You cannot apply late days to assignments at the end of the semester or days after you submit your assignment. These are intended to be used in a situation where life events happen, not to retroactively apply them at the end of the semester.</p>
+        
+        
+        <h4>Homework Assignments (HW)</h4>
+        <p>Details on HW assignments are on the Canvas site for this course. Due dates for each assignment can be found on Canvas and on the course Schedule. Grading distributions can be found on the course Syllabus. Submit all HW assignments on Canvas. Unless indicated by the HW instructions, all HWs are to be completed individually.</p>
+        <p>These individual assignments will teach you the basic skills for developing web-based visualizations. You are expected to complete these assignments using d3.js.</p>
+        <p>It is good practice to develop your assignments using some sort of version control. GaTech gives you access to GitHub, which is a good one to use if you haven’t done so already.</p>
+        <p>When grading, we will use Google Chrome in Incognito Mode to run your visualizations. Further, when a server is required, we will use a Python server on localhost.</p>
+        <p>When submitting on Canvas, make sure you submit a .zip containing all your files and name it Lastname_Firstname.zip (e.g., Yang_Yalong.zip) unless otherwise mentioned in the assignment.</p>
+        <p>Warning: There are many existing examples and source code widely available online. While these are great resources for you to learn, note that copying these is considered a breach of the rules from the Office of Student Integrity and will be handled accordingly. Be careful and thoughtful to use these resources responsibly.</p>
+        <h4>Class Engagement</h4>
+        <p>This is an in-person section of the course, and all students are required and expected to attend class. On research days (Tuesdays), when other students are presenting papers, everyone should give the presenters their attention and be ready for a discussion afterward. On programming days (Thursdays), the instructors will present material and then students will engage with interactive labs, so definitely bring your laptop that day.</p>
+    
+    </section>
+
+    <section id="section3">
+        <h2>Schedule Table</h2>
+        <p>See the Canvas page for <a href="#section4">readings</a>.</p>
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Date</th>
+                <th>Topic</th>
+            </tr>
+            
+            <tr>
+              <td rowspan="2">1</td>
+              <td>1/7</td>
+              <td>Course Intro</td>
+            </tr>
+            <tr>
+              <td>1/9</td>
+              <td>Assignments, Presentations, Programming Expectations</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">2</td>
+                <td>1/14</td>
+                <td>Techniques</td>
+              </tr>
+              <tr>
+                <td>1/16</td>
+                <td>Web Development Fundamentals (The Web, HTML, CSS, SVG)</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">3</td>
+                <td>1/21</td>
+                <td>No class, modified operations at GT</td>
+              </tr>
+              <tr>
+                <td>1/23</td>
+                <td>Web Development Fundamentals - II (JS, DOM, and tooling)</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">4</td>
+                <td>1/28</td>
+                <td>Empirical Study</td>
+              </tr>
+              <tr>
+                <td>1/30</td>
+                <td>Introduction to D3</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">5</td>
+                <td>2/4</td>
+                <td>Design Study</td>
+              </tr>
+              <tr>
+                <td>2/6</td>
+                <td>D3: Data Loading and Binding</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">6</td>
+                <td>2/11</td>
+                <td>Beyond Desktop Visualization</td>
+              </tr>
+              <tr>
+                <td>2/13</td>
+                <td>D3: Scales, Charts and Axes</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">7</td>
+                <td>2/18</td>
+                <td>Visualization & Human-AI Interaction</td>
+              </tr>
+              <tr>
+                <td>2/20</td>
+                <td>D3: Interaction 1</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">8</td>
+                <td>2/25</td>
+                <td>Visual Perception and Misinterpretation</td>
+              </tr>
+              <tr>
+                <td>2/27</td>
+                <td>D3: Interaction 2</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">9</td>
+                <td>3/4</td>
+                <td>Collaborative Visualization</td>
+              </tr>
+              <tr>
+                <td>3/6</td>
+                <td>D3: Interaction 3</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">10</td>
+                <td>3/11</td>
+                <td>Data Physicalization & Tangible UI</td>
+              </tr>
+              <tr>
+                <td>3/13</td>
+                <td>D3: Self Practice (Q&A)</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">11</td>
+                <td>3/18</td>
+                <td rowspan="2">Spring break -- no class</td>
+              </tr>
+              <tr>
+                <td>3/20</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">12</td>
+                <td>3/25</td>
+                <td>Immersive Visualization</td>
+              </tr>
+              <tr>
+                <td>3/27</td>
+                <td>D3: Layouts</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">13</td>
+                <td>4/1</td>
+                <td>Visualization & Accessibility</td>
+              </tr>
+              <tr>
+                <td>4/3</td>
+                <td>D3: Scrollytelling</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">14</td>
+                <td>4/8</td>
+                <td>Data Storytelling</td>
+              </tr>
+              <tr>
+                <td>4/10</td>
+                <td>D3: Geo</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">15</td>
+                <td>4/15</td>
+                <td>Geographic Visualization (or Visualization Authoring)</td>
+              </tr>
+              <tr>
+                <td>4/17</td>
+                <td>D3: Networks</td>
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td>4/22</td>
+                <td>Review and Reflection</td>
+            </tr>
+
+        </table>
+        
+
+    </section>
+
+    <section id="section4">
+        <h2>Readings</h2>
+        <table id="csvtable" class="styled-table"></table>
+        <script src="script.js"></script>
+    </section>
+
+    <section id="section5">
+        <h2>Assignments</h2>
+        <h4>Grading Distribution of Assignments</h4>
+        <p> </p>
+        <svg width="700" height="400">
+            <text class="label" x="410" y="70">HW Assignments (35%)</text>
+            <text class="label" x="410" y="190">Research Proposal (25%)</text>
+            
+            
+                     
+            
+            
+
+            <rect class="rect" x="0" y="0" width="170" height="140"></rect>
+            <text class="rect-text" x="50" y="70">H4</text>
+            <text class="rect-text" x="50" y="85">(15%)</text>
+            
+            <rect class="rect" x="170" y="0" width="115" height="140"></rect>
+            <text class="rect-text" x="190" y="70">H3</text>
+            <text class="rect-text" x="190" y="85">(10%)</text>
+
+            <rect class="rect" x="285" y="0" width="80" height="140"></rect>
+            <text class="rect-text" x="300" y="70">H2</text>
+            <text class="rect-text" x="300" y="85">(7%)</text>
+            
+            <rect class="rect" x="365" y="0" width="35" height="140"></rect>
+            <text class="rect-text" x="368" y="70">H1</text>
+            <text class="rect-text" x="368" y="85">(3%)</text>
+
+            <rect class="rect" x="0" y="140" width="160" height="100"></rect>
+            <text class="rect-text" x="30" y="190">Method and Plan</text>
+            <text class="rect-text" x="30" y="205">(10%)</text>
+            
+            <rect class="rect" x="160" y="140" width="128" height="100"></rect>
+            <text class="rect-text" x="170" y="190">Literature Review</text>
+            <text class="rect-text" x="170" y="205">(8%)</text>
+            
+            <rect class="rect" x="288" y="140" width="112" height="100"></rect>
+            <text class="rect-text" x="320" y="190">Ideation</text>
+            <text class="rect-text" x="320" y="205">(7%)</text>
+
+            <rect class="rect" x="0" y="240" width="400" height="60"></rect>
+            <text class="rect-text" x="100" y="270">Reading Presentation (15%)</text>
+            <rect class="rect" x="0" y="300" width="400" height="60"></rect>
+            <text class="rect-text" x="100" y="330">Reading Reflection (15%)</text>
+            <rect class="rect" x="0" y="360" width="400" height="40"></rect>
+            <text class="rect-text" x="100" y="380">Class Engagement (10%)</text>
+        </svg>
+        
+        <h4>H1 (Due 2025/01/31)</h4>
+        <p>For this assignment, you will practice using web stack basics and create a web page. For this, you have two options for what this page should be about: this course or a personal page for yourself. You only have to pick and do one of these. Do not do both. The description for both is below.</p>
+        <p><b>Option 1: Single web page for this course</b></p>
+        <p>This course has a combination of material in multiple tabs on Canvas. Specifically, there is the course syllabus (with course information), the schedule table, the readings, and the assignments. Your task for this option is to create a single page, one-stop-shop for all this information.</p>
+        <p>1. To accomplish this, you need to:</p>
+        <ul>
+            <li>Use HTML and CSS styles to change the fonts/look/feel of the site</li>
+            <li>Clicking on the the navigation link at the top of the page should scroll to the correct position on the page.</li>
+            <li>When descriptions of HW assignments are not yet available, just put "details TBD."</li>
+        </ul>
+        <p>2. Use Javascript to add elements dynamically based on data. Instead of repeating elements and content in static HTML pages, use JavaScript to manipulate the DOM to add papers dynamically based on a data file.</p>
+        <ul>
+            <li>Instead of creating a list for all the papers in static HTML, we have a data file for the paper information in a CSV. Use this CSV and parse it using JavaScript to add the elements dynamically to the readings list as part of your webpage. Note that this CSV file is from previous terms and may not match the current reading list, so please feel free to update them but it's not required.</li>
+            <li><a href="papers.csv">Reading Papers</a></li>
+            <li>Use SVG to create some sort of visual element to show the grade distribution (instead of the simple table/list on the site now)</li>
+        </ul>
+        
+        <p><b>Option 2: Create a personal webpage for yourself</b></p>
+        <p>For this option, your task is to create a webpage for yourself as a researcher. As I'm sure some of you have seen, there are lots of those around used by our colleagues. Some of you may even already have one! More on that below.</p>
+        <p>For this page, your goal is to create a single page that shares important information about yourself as a researcher. If you select this option, the requirements for this page include:</p>
+        <ul>
+            <li>Create a single, scrollable web page with categories about you as a researcher. At a minimum, these should be: About (with information about you), Publications (with a list of publications), Research Interests (with a list of interests that you have regarding the research you work on)</li>
+            <li>Use JavaScript to set up a way to populate your research papers from a data file. Similar to step 2 in Option 1 above, use JavaScript to dynamically add publications to your publication list based on a data file. The format of the file is up to you. </li>
+            <li>Add some form of SVG to the webpage to show some aspect of your information in visual form (or for design purposes)</li>
+        </ul>
+        <p><i>Note: If you already have a web page, you are welcome to use it. However, it must have the components described above (at a minimum). Also, site that are created from other tools (e.g., Wordpress) are not allowed for this assignment (and they likely will not fit the requirements).</i></p>
+        <p><b>What to submit:</b> You should put all the files for your webpage into a single folder, <b>name that folder using your GTID</b>, then create a .zip from the folder. Turn in this .zip. We will unzip this, host the root folder, and test your submission. Hint: be careful not to hard-code any paths relative to your machine. Use paths relative to the directory.</p>
+        
+        <h4>H2 (Details TBD)</h4>
+        <h4>H3 (Details TBD)</h4>
+        <h4>H4 (Details TBD)</h4>
+    </section>
+
+
+        
+        
+
+
+</body>
+</html>
